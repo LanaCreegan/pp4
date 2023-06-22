@@ -42,5 +42,7 @@ Recipe Management:
 Recipe Searching:
 * Search For Recipes - As a Site User I would like to be able to find recipes on the site so that I can try a new recipe I've never cooked before
 
-
+Recipe Views:
+* Recipe Instructions - As a Site User I can view the instructions on each recipe so that I can easily follow them
+* Multiple Recipe Summary -  As a Site User I would like to be able to view multiple recipces at once so I have a choice as to what recipe I want to try
 
