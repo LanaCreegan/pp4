@@ -39,3 +39,6 @@ Recipe Management:
 * Recipe Edit - As a Site User I can edit a recipe I have created incase I have made any mistakes
 * Recipe Deletion - As a Site User I can delete a recipe I have created
 
+Recipe Searching:
+* Search For Recipes - As a Site User I would like to be able to find recipes on the site so that I can try a new recipe I've never cooked before
+
