@@ -23,3 +23,7 @@ PP4 is a website where users can share their recipes. It was built in Django usi
 * [Credits](#Credits)
     * [Media](#Media)
     * [Code](#Code)
+
+
+## UX
+PP4 is a simple and user intuitive website for users to share their recipes with others and discover recipes by other users. 
