@@ -31,7 +31,7 @@ PP4 is a simple and user intuitive website for users to share their recipes with
 ### User Stories 
 User Account: 
 * Create Account - As a site user I want to create an account to create and save recipes
-* Sign In and Sign Out - As a Site User I want to sign in and out of my account
+* Sign In and Sign Out - As a Site User I want to sign in and out of my account so that manage my recipes and view recipes that I have saveds
 
 Recipe Management:
 * Recipe Creation - As a Site User I can create a new recipe to share with others
