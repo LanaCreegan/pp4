@@ -35,9 +35,9 @@ User Account:
 
 Recipe Management:
 * Recipe Creation - As a Site User I can create a new recipe to share with others
-* Recipe View - As a Site User I can view the recipes on the site
+* Recipe View - As a Site User I can view the recipes on the site so that I can try them at home
 * Recipe Edit - As a Site User I can edit a recipe I have created incase I have made any mistakes
-* Recipe Deletion - As a Site User I can delete a recipe I have created
+* Recipe Deletion - As a Site User I can delete a recipe I have created so that it can be removed from the site
 
 Recipe Searching:
 * Search For Recipes - As a Site User I would like to be able to find recipes on the site so that I can try a new recipe I've never cooked before
