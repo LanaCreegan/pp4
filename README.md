@@ -63,3 +63,7 @@ Recipe Interaction:
 
 Responsiveness:
 * Create a website that is fully responsive for desktop, tablet and mobile
+
+## Structre 
+Home page:
+* Features a register/sign in section so the user can create an account and sign in to access different features 
