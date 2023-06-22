@@ -59,11 +59,19 @@ Recipes:
 * Users can create, view, edit and delete their recipes 
 
 Recipe Interaction: 
-* Users can leave a comment on a recipe and save a recipe. The user needs to be logged in to interact with recipes
+* Users can leave a comment on a recipe and save a recipe. The user needs to be logged in to interact with recipes.
 
 Responsiveness:
-* Create a website that is fully responsive for desktop, tablet and mobile
+* Create a website that is fully responsive for desktop, tablet and mobile.
 
 ## Structre 
 Home page:
-* Features a register/sign in section so the user can create an account and sign in to access different features 
+* Features a register/sign in section so the user can create an account and sign in to access different features. 
+
+Recipe Page:
+* Features a list of recipes posted by the user and other users. 
+
+Recipe Steps:
+* Users can click into a recipe for instructions for the recipes. Save and comment features are for signed in users only.
+
+
