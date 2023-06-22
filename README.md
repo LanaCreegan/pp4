@@ -46,3 +46,5 @@ Recipe Views:
 * Recipe Instructions - As a Site User I can view the instructions on each recipe so that I can easily follow them
 * Multiple Recipe Summary -  As a Site User I would like to be able to view multiple recipces at once so I have a choice as to what recipe I want to try
 
+Recipe Interactions:
+* Recipe comments - As a Site User I can comment on other people recipes so that I can give feedback if I have tried the recipe
