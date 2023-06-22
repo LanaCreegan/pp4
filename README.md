@@ -48,3 +48,6 @@ Recipe Views:
 
 Recipe Interactions:
 * Recipe comments - As a Site User I can comment on other people recipes so that I can give feedback if I have tried the recipe
+* Save Recipes - As a Site User I can save recipes and refer back to them at a later time
+
+
