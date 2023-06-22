@@ -50,4 +50,16 @@ Recipe Interactions:
 * Recipe comments - As a Site User I can comment on other people recipes so that I can give feedback if I have tried the recipe
 * Save Recipes - As a Site User I can save recipes and refer back to them at a later time
 
+## Scope
+User Account:
+* Users can create an account
+* Users can sign in and out of their account
 
+Recipes: 
+* Users can create, view, edit and delete their recipes 
+
+Recipe Interaction: 
+* Users can leave a comment on a recipe and save a recipe. The user needs to be logged in to interact with recipes
+
+Responsiveness:
+* Create a website that is fully responsive for desktop, tablet and mobile
