@@ -108,6 +108,11 @@ The repository can be cloned by following these steps:
 - Type git clone and paste the URL from earlier
 - Press enter to create the local clone
 
+## Credits
+Media 
+
+Content 
+
 
 
 
