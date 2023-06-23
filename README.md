@@ -18,7 +18,6 @@ PP4 is a website where users can share their recipes. It was built in Django usi
 * [Testing](#Testing)
 * [Deployment](#Deployment)
     * [Heroku](#Heroku)
-    * [Fork](#Fork)
     * [Clone](#Clone)
 * [Credits](#Credits)
     * [Media](#Media)
@@ -95,6 +94,19 @@ Heroku - used for deploying the site
 
 ## Testing
 
+
+## Deployment 
+Heroku
+
+Clone
+The repository can be cloned by following these steps:
+- Log into GitHub and go to the GitHub Repository
+- Click on the code button on the right above the files list
+- Then select HTTPS and copy the URL
+- Open Git Bash
+- Change the current working to the location you want the cloned directory to be
+- Type git clone and paste the URL from earlier
+- Press enter to create the local clone
 
 
 
