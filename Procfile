@@ -1,1 +1,1 @@
-web: gunicorn easy-bites-pp4.wsgi
+web: gunicorn easybites.wsgi
