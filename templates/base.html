@@ -15,7 +15,26 @@
     <title>Easy Bites</title>
   </head>
   <body>
-   
-    
+   <header>
+    <div class="container-fluid fixed-top">
+      <a href="#" class="navbar">Easy Bites</a>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Recipes</a>
+        </li>
+        <li>
+          <a href="#">Login</a>
+        </li>
+      </ul>
+    </div>
+   </header>
+    <main>
+      {% block content %}
+
+      {% endblock %}
+    </main>
   </body>
 </html>
