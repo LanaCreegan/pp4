@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'cloudinary',
     'foodblog',
-    'home'
+    'home',
 ]
 
 MIDDLEWARE = [
