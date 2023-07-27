@@ -7,7 +7,7 @@ class Recipe(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='author')
     date_created_on = models.DateTimeField(auto_now_add=True)
     date_updated_on = models.DateTimeField(auto_now=True)
-    description = models.TextField
+    description = models.TextField(max_length=500, null=True)
     featured_image = CloudinaryField('image', default='placeholder')
 
 
