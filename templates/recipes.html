@@ -6,17 +6,21 @@
     <div class="container">
 
         <!--Recipe Posts-->
-        <div class="row">
-            <div class="col-6">
+        <div class="col-12 mt-3">
+            <div class="row">
                 {% for recipe in recipe_list %}
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Recipe Title</h5>
-                      <p class="card-text">Text</p>
-                      <a href="#" class="btn btn-primary">Button</a>
+                     <a href="#" class="recipe-link">
+                      <h5 class="card-title">{{ recipe.title }}</h5>
+                      </a>
+                      <p class="card-text">{{ recipe.description }}</p>
+                      <p class="author">Author: {{ recipe.author }}</p>
                     </div>   
+                    {% if forloop.counter|divisibleby:3 %}
             </div>
+            {% endif %}
             {% endfor %}
         </div>
     </div>
