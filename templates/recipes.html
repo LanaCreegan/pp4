@@ -12,7 +12,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                     <a href="#" class="recipe-link">
+                     <a href="{% url 'recipe_detail' recipe.slug %}" class="recipe-link">
                       <h5 class="card-title">{{ recipe.title }}</h5>
                       </a>
                       <p class="card-text">{{ recipe.description }}</p>
