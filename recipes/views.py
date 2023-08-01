@@ -1,12 +1,12 @@
-from django.shortcuts import render, get_object_or_404
-from django.views import generic 
+from django.shortcuts import render
+from django.views import generic, View
 from .models import Recipe
 
-class RecipePost(generic.ListView):
+class Recipe(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by('-date_created_on')
     template_name = 'recipes.html'
-    paginate_by = 4
+    paginate_by = 6
 
 class RecipeDetail(View):
 
