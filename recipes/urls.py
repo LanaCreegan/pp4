@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.Recipe.as_view(), name='recipes'),
+    path('', views.RecipeList.as_view(), name='recipes'),
     path('<slug:slug>/', views.RecipeDetail.as_view(), name='recipes_detail'),
 ]
