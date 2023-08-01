@@ -7,10 +7,10 @@ class Recipe(ListView):
     template_name = 'recipes.html'
     paginate_by = 4
 
-class RecipeDetail(ListView):
+class RecipeDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
-        post = get_object_or_404(queryset, slug=slug)
+        post = get_object_or_404(self, slug=slug)
 
         return render(
             request,
