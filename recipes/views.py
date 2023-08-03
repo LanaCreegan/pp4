@@ -26,6 +26,7 @@ class RecipeDetail(View):
             {
                 "post": recipe,
                 "comments": comments,
-                "liked": liked
+                "liked": liked,
+                "comment_form": CommentForm()
             },
         )
