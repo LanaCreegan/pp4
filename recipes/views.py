@@ -32,6 +32,38 @@ class RecipeDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+        def post(self, request, slug, *args, **kwargs):
+
+            queryset = Recipe.objects.filter(status=1)
+            recipe = get_object_or_404(queryset, slug=slug)
+            comments = post.comments.filter(approved=True).order_by("-date_created_on")
+            liked = False
+            if post.likes.filter(id=self.request.user.id).exists():
+                liked = True
+
+            comment_form = CommentForm(data=request.POST)
+            if comment_form.is_valid():
+                comment_form.instance.email = request.user.email
+                comment_form.instance.name = request.user.username
+                comment = comment_form.save(commit=False)
+                comment.recipe = recipe
+                comment.save()
+            else:
+                comment_form = CommentForm()
+
+            return render(
+                request,
+                "recipes_detail.html",
+                {
+                    "recipe": recipe,
+                    "comments": comments,
+                    "commented": True,
+                    "comment_form": comment_form,
+                    "liked": liked
+                },
+            )
+
     
 
 class RecipeLike(View):
