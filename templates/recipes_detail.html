@@ -2,6 +2,9 @@
 {% load static %}
 
 {% block content %}
+
+
+<!--Recipe image & title-->
 <section>
 <div class="container">
     <div class="row">
@@ -14,16 +17,19 @@
     </div>
 
 
-
+<!--Recipe description-->
     <div class="row">
         <div class="col card mb-4">
             <div class="card-body">
                 <p class="card-text ">
                     {{ recipe.description }}
-                    Description
-                </p>
-                <div class="row">
+                </p>        
+    </div>
+        </div>
+            </div>
 
+<!--Recipe likes & number of comments-->
+            <div class="row">
                     <div class="col-1">
                         <strong class="text-secondary"><i class="far fa-heart"></i> {{ recipe.number_of_likes }} </strong>
                     </div>
@@ -33,37 +39,7 @@
                             {{ total_comments }}</p>
                         {% endwith %}
                     </div>
-                </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
-            <div class="card-body">
-                {% for comment in comments %}
-                <div class="comments" style="padding: 10px;">
-                    <p class="font-weight-bold">
-                        {{ comment.name }}
-                        <span>
-                            {{ comment.created_on }}
-                        </span> wrote:
-                    </p>
-                    {{ comment.body | linebreaks }}
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-md-4 card mb-4  mt-3 ">
-            <div class="card-body">
-            </div>
-        </div>
-    </div>
-</div>
+
 </section>
 {% endblock content %}

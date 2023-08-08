@@ -24,9 +24,11 @@ class RecipeDetail(View):
             request,
             "recipes_detail.html",
             {
-                "post": recipe,
+                "recipe": recipe,
                 "comments": comments,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
         )
+    
+    
