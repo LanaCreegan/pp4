@@ -40,9 +40,16 @@
                                 class="fas fa-heart"></i></button>
 
                             {% else %}
+
+                            <button type="submit" name="recipepost_id" value="{{post.slug}}" class="btn-like"><i
+                                class="fas fa-heart"></i></button>    
+
                             {% endif %}
                         </form>
-                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ recipe.number_of_likes }} </strong>
+                        {% else %}
+                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        {% endif %}
+                        <span class="text-secondary"><i class="far fa-heart"></i> {{ recipe.number_of_likes }} </span>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
