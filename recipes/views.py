@@ -5,7 +5,6 @@ from .models import Recipe
 from .forms import CommentForm
 
 
-
 class RecipeList(generic.ListView):
     model = Recipe
     queryset = Recipe.objects.filter(status=1).order_by("-date_created_on")
@@ -75,3 +74,6 @@ class RecipeLike(View):
             recipe.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('recipes_detail', args=[slug]))
+
+
+
