@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.views.generic.edit import CreateView
 from .models import Recipe
-from .forms import CommentForm
+from .forms import CommentForm, RecipeForm
 
 
 class RecipeList(generic.ListView):
@@ -76,4 +77,7 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipes_detail', args=[slug]))
 
 
-
+class RecipeAdd(CreateView):
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'recipe_details.html'
