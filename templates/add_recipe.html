@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                {% if recipe %}
+                <h1 class="title mt-70">Add Recipe</h1>
+                <p>Add recipe as: {{ user.username }}</p>
+                {% else %}
+                <h1 class="title mt-70">Add Book</h1>
+                <p>Edit Recipe as: {{ user.username }}</p>
+                {% endif %}
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="text-center">
+                    <button class="btn btn-secondary right mb-4" type="submit" value="Save">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock content %}

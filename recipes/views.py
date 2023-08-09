@@ -80,4 +80,4 @@ class RecipeLike(View):
 class RecipeAdd(CreateView):
     model = Recipe
     form_class = RecipeForm
-    template_name = 'recipe_details.html'
+    template_name = 'add_recipe.html'
