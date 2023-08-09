@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
@@ -83,4 +83,7 @@ class RecipeAdd(LoginRequiredMixin, CreateView):
         form_class = RecipeForm
         template_name = 'add_recipe.html'
 
-    
+class RecipeEdit(LoginRequiredMixin, UpdateView):
+    model = Recipe
+    form_class = RecipeForm
+    template_name = 'add_recipe.html'

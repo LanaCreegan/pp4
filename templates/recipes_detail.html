@@ -29,6 +29,13 @@
         </div>
             </div>
 
+<!--Edit recipe-->
+            {% if user.is_authenticated %}
+                    <div class="text-center">
+                        <a href="edit_recipe" class="btn-edit btn-sm btn-secondary mb-3">Edit</a>
+                    </div>
+                    {% endif %}
+
 <!--Recipe likes & number of comments-->
                 <div class="row">
                     <div class="col-1">
