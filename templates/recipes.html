@@ -26,9 +26,16 @@
             {% endfor %}
         </div>
         
+        {% if user.is_authenticated %}
         <div class="text-center">
             <a href="{% url 'recipe_add' %}" class="btn btn-signup btn-lg mb-4">Add Recipe</a>
         </div>
+        {% else %}
+        <div class="text-center">
+            <a href="{% url 'account_login' %}" class="btn btn-signup btn-lg mb-4">Log in to create a recipe</a>
+        </div>
+    {% endif %}
+
 
         {% if is_paginated %}
     <nav aria-label="Page navigation">

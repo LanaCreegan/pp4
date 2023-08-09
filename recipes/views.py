@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic.edit import CreateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Recipe
 from .forms import CommentForm, RecipeForm
 
@@ -77,7 +78,9 @@ class RecipeLike(View):
         return HttpResponseRedirect(reverse('recipes_detail', args=[slug]))
 
 
-class RecipeAdd(CreateView):
-    model = Recipe
-    form_class = RecipeForm
-    template_name = 'add_recipe.html'
+class RecipeAdd(LoginRequiredMixin, CreateView):
+        model = Recipe
+        form_class = RecipeForm
+        template_name = 'add_recipe.html'
+
+    
